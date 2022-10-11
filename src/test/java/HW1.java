@@ -22,16 +22,16 @@ public class HW1 {
 
     public void FrCh()
     {
-        /*WebElement FranCh = wd.findElement(By.cssSelector("tr:nth-child(4) td:nth-child(2)"));
+        WebElement FranCh = wd.findElement(By.cssSelector("tr:nth-child(4) td:nth-child(2)"));
         String text1 = FranCh.getText();
         System.out.println(text1);
-        Assert.assertEquals(text1,"Francisco Chang");*/
+        Assert.assertEquals(text1,"Francisco Chang");
     }
 
     @Test
 
     public void PrintFromTable(){
-        /*List<WebElement> Naims = wd.findElements(By.cssSelector("#customers tr"));
+        List<WebElement> Naims = wd.findElements(By.cssSelector("#customers tr"));
         System.out.println(Naims.size());
 
         for(WebElement naime:Naims){
@@ -49,12 +49,14 @@ public class HW1 {
         for (WebElement company:companes)
         {
             System.out.println(company.getText());
-        }*/
+        }
+        System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
         List<WebElement> row33 = wd.findElements(By.cssSelector("#customers tr:nth-child(3)"));
         for (WebElement row:row33){
         System.out.println(row.getText());}
 
-        //Assert.assertEquals(shura,"Berglunds snabbköp Christina Berglund Sweden");
+
+        //Assert.assertTrue(row.contains("Berglunds"));
 
 
         {
